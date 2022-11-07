@@ -35,4 +35,8 @@ exports.LoginPage = class LoginPage {
         await expect(this.loginButton).toBeVisible();
     }
 
+    async verifyHeadlineTextIsDisplayed(headLineText) {
+      await expect(this.formHeadline).toHaveText(headLineText);
+  }
+
 }
