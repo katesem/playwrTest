@@ -1,0 +1,21 @@
+{
+  "name": "playwrtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "example.spec.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katesem/playwrTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katesem/playwrTest/issues"
+  },
+  "homepage": "https://github.com/katesem/playwrTest#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1"
+  }
+}
