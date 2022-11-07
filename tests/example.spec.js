@@ -12,3 +12,10 @@ test('Verify Login Form components', async ({ page }) => {
   await loginpage.verifyPasswordFieldIsDisplayed();
   await loginpage.verifyLoginButtonIsDisplayed();
 });
+
+
+test('Verify that the text of the Login form headline equals to "AQA internship Login"', async ({ page }) => {
+  const loginpage = new LoginPage(page);
+    await loginpage.gotoLoginPage();
+    await loginpage.verifyHeadlineTextIsDisplayed('AQA internship Login');
+});
