@@ -2,9 +2,13 @@ const { test, expect } = require('@playwright/test');
 const { LoginPage } = require('../pages/login.page.js');
 
 
-test('Verify that Login Form Logo is displayed', async ({ page }) => {
+
+test('Verify Login Form components', async ({ page }) => {
   const loginpage = new LoginPage(page);
   await loginpage.gotoLoginPage();
-  await loginpage.verifyformLogo();
- 
+  await loginpage.verifyFormLogoIsDisplayed();
+  await loginpage.verifyFormHeadlineIsDisplayed();
+  await loginpage.verifyUserNameFieldIsDisplayed();
+  await loginpage.verifyPasswordFieldIsDisplayed();
+  await loginpage.verifyLoginButtonIsDisplayed();
 });
